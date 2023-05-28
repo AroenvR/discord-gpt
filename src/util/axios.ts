@@ -1,7 +1,6 @@
 import axios from 'axios';
 
 const instance = axios.create({
-    timeout: 5000,
     headers: {
         'Authorization': `Bearer ${process.env.BEARER_TOKEN}`,
         'Content-Type': 'application/json',
