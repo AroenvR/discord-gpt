@@ -19,5 +19,9 @@
     "eslint-plugin-react": "^7.32.2",
     "nodemon": "^2.0.22",
     "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "discord.js": "^14.11.0",
+    "dotenv": "^16.0.3"
   }
 }

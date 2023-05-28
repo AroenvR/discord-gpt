@@ -1,4 +1,4 @@
-const foo = async (): Promise<void> => {
-    console.log("Hello, TypeScript!");
-}
-foo();
+import dotenv from 'dotenv'; dotenv.config();
+import { startBot } from './bot';
+
+startBot();

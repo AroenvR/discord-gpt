@@ -41,3 +41,5 @@ You can enable any scope you feel like, but you must enable at least the followi
 Copy and paste your Custom URL generated earlier into the browser.  
 You'll be prompted to invite your newly created bot into a server (assuming you are in, or have, a server with the necessary privileges).  
 Authorize the bot to join your server.
+
+# Set up OpenAI
