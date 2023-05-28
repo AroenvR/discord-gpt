@@ -1,6 +1,9 @@
 import { Client, GatewayIntentBits, Events, Message } from 'discord.js';
-import { promptGpt } from './gpt';
+import { promptGpt } from '../openai/gpt';
 
+/**
+ * Start the Discord bot.
+ */
 export const startBot = async () => {
     console.log("Starting bot...");
     const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent] });

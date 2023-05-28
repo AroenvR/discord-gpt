@@ -1,6 +1,11 @@
-import { httpsPost } from "./util/axios";
+import { httpsPost } from "../util/axios";
 
-// Chat-GPT documentation: https://platform.openai.com/docs/guides/chat/introduction
+/**
+ * Prompt an OpenAI Chat model.
+ * Chat-GPT documentation: https://platform.openai.com/docs/guides/chat/introduction
+ * @param prompt to send to the model.
+ * @returns the model's response.
+ */
 export const promptGpt = async (prompt: string) => {
     console.log("Sending payload to OpenAI.");
 
