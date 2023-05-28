@@ -43,3 +43,7 @@ You'll be prompted to invite your newly created bot into a server (assuming you 
 Authorize the bot to join your server.
 
 # Set up OpenAI
+- Navigate to: https://platform.openai.com/account/api-keys
+- Login / Create an account.
+- **+** Create new secret key (or use an existing one)
+- Paste the key into your .env file.
