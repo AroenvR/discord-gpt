@@ -1,6 +1,8 @@
 import { Client, GatewayIntentBits, Events, Message } from 'discord.js';
 import { promptGpt } from '../openai/gpt';
 
+// Check out https://discordjs.guide/creating-your-bot/slash-commands.html#individual-command-files for more info on creating bots.
+
 /**
  * Start the Discord bot.
  */
