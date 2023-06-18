@@ -19,7 +19,7 @@ export const startBot = async () => {
         if (message.author.bot) return; // Ensure bots don't reply to other bots.
         if (!message.content.startsWith(process.env.OPTONNANI_TAG!)) return; // reply if message has "!" as first character.
 
-        const prompt = message.content;
+        const prompt = message.content.replace(`${process.env.OPTONNANI_TAG!} `, "");
         console.log(`Received message: ${prompt}`);
 
         const gptResponse = await promptGpt(prompt);
