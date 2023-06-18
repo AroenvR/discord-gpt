@@ -14,8 +14,10 @@ export const startBot = async () => {
 
     // Handle message events.
     client.on(Events.MessageCreate, async (message: Message) => {
+        console.log("User input received.");
+
         if (message.author.bot) return; // Ensure bots don't reply to other bots.
-        if (message.content.substring(0, 1) !== "!") return; // reply if message has "!" as first character.
+        if (!message.content.startsWith(process.env.OPTONNANI_TAG!)) return; // reply if message has "!" as first character.
 
         const prompt = message.content;
         console.log(`Received message: ${prompt}`);
